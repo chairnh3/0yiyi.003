@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡單測驗</title>
     <style>
     a {
-        text-decoration:none;
-        color:white;
+        text-decoration: none;
+        color: white;
+    }
+    .option {
+        position: fixed;
+        padding: 0;
+        border: 0;
+    }
+        .option li {
+            width: 150px;
+            height: 70px;
+            background-color: #DSD5D5;
+            color: #9099A2
+            border: 1px solid #9099A2;
+            padding: 10px;
+        }
+    .active {
+        display: block;
     }
     </style>
 </head>
 <body bgcolor="#D7CEC7">
-    <a href="set.html target="_top"><img src="images/cog-512.png" width="20px" align="right" /></a><br />
-      <a href="tarot.html" target="_top"><div style="background-color: #565656;text-align: center;font-family: 標楷體;font-size: 20px;padding: 30px;margin: 30px;">塔羅牌</div></a>
-      <a href="feather.html" target="_top"><div style="background-color: #C09F80;text-align: center;font-family: 標楷體;font-size: 20px;padding: 30px;margin: 30px;">憑感覺</div></a>
+    <div id="set" class="option"><img src="images/cog-512.png" width="20px" align="right" />
+        <ul id="about" class="option">
+            <li>音量調整</li>
+            <li>關於我們</li>
+        </ul>
+    </div>
+    <a href="tarot.html" target="_top"><div style="background-color: #565656;text-align: center;font-family: 標楷體;font-size: 20px;padding: 30px;margin: 30px;">塔羅牌</div></a>
+    <a href="feather.html" target="_top"><div style="background-color: #C09F80;text-align: center;font-family: 標楷體;font-size: 20px;padding: 30px;margin: 30px;">憑感覺</div></a>
 </body>
 </html>
