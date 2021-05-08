@@ -12,9 +12,9 @@
         color: white;
     }
     .option {
-        position: fixed;
         padding: 0;
         border: 0;
+        margin-right: 0;
     }
         .option li {
             width: 150px;
@@ -28,10 +28,23 @@
         display: block;
     }
     </style>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#set").on({
+                "mouseenter": fnToggleClass,
+                "mouseleave": fnToggleClass
+            });
+        });
+
+        function fnToggleClass() {
+            $("#list").toggleClass("active");
+        }
+    </script>
 </head>
 <body bgcolor="#D7CEC7">
     <div id="set" class="option"><img src="images/cog-512.png" width="20px" align="right" />
-        <ul id="about" class="option">
+        <ul id="list" class="option active">
             <li>音量調整</li>
             <li>關於我們</li>
         </ul>
