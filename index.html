@@ -31,7 +31,12 @@
     </style>
     <script src="jquery-3.3.1.min.js"></script>
     <script>
-        $(document).ready(function (){
+        // 網頁載入完成時執行
+        $(document).ready(function () {
+            //將#set元素綁定mouseenter和mouseleave事件
+            //mouseenter和mouseleave事件被觸發時會執行fnToggleClass函式
+            //滑鼠碰到#set顯示#list選單
+            //滑鼠離開#set隱藏#list選單
             $("#set").on({
                 "mouseenter": fnToggleClass,
                 "mouseleave": fnToggleClass
@@ -39,6 +44,7 @@
         });
 
         function fnToggleClass() {
+            //切換顯示#list，即選單
             $("#list").toggleClass("active");
         }
     </script>
