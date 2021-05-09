@@ -39,25 +39,25 @@
     <script>
         // 網頁載入完成時執行
         $(document).ready(function () {
-            //將#set元素綁定mouseenter和mouseleave事件
+            //將#sel元素綁定mouseenter和mouseleave事件
             //mouseenter和mouseleave事件被觸發時會執行fnToggleClass函式
-            //滑鼠碰到#set顯示#list選單
-            //滑鼠離開#set隱藏#list選單
-            $("#set").on({
+            //滑鼠碰到#sel顯示#about關於我們選單
+            //滑鼠離開#sel隱藏#about關於我們選單
+            $("#sel").on({
                 "mouseenter": fnToggleClass,
                 "mouseleave": fnToggleClass
             });
         });
 
         function fnToggleClass() {
-            //切換顯示#list，即選單
-            $("#list").toggleClass("active");
+            //切換顯示#about，即關於我們的選單
+            $("#about").toggleClass("active");
         }
     </script>
 </head>
 <body bgcolor="#D7CEC7">
     <div class="header">
-        <div class="option">
+        <div id="sel" class="option">
             <p>關於我們</p>
             <img src="images/cog-512.png" width="20px" align="right" />
             <ul id="about" class="option-cont active">
