@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡單測驗-遊戲說明</title>
+    <style type="text/css">
+        a {
+          text-decoration:none;
+          color:#DB8A4D;
+        }
+
 </head>
     
 <body bgcolor="#D7CEC7">
