@@ -1,72 +1,15 @@
 <!doctype html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>塔羅牌</title>
-    <style>
-    .header {
-        height: 100px;
-        width: 100%;
-        background-color: white;
-    }
-    .option {
-        float: right;
-        width: 150px;
-        border: 1px solid white;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 10px;
-        color: black;
-    }
-    .option-cont {
-        list-style-type: none;
-        padding: 0;
-        display: none;
-    }
-        .option-cont li {
-            background-color: white;
-            color: #9099A2;
-            border: 1px solid #9099A2;
-            padding: 10px;
-        }
-    .active {
-        display: block;
-    }
-    </style>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script>
-        // 網頁載入完成時執行
-        $(document).ready(function () {
-            //將#sel元素綁定mouseenter和mouseleave事件
-            //mouseenter和mouseleave事件被觸發時會執行fnToggleClass函式
-            //滑鼠碰到#sel顯示#about關於我們選單
-            //滑鼠離開#sel隱藏#about關於我們選單
-            $("#sel").on({
-                "mouseenter": fnToggleClass,
-                "mouseleave": fnToggleClass
-            });
-        });
-
-        function fnToggleClass() {
-            //切換顯示#about，即關於我們的選單
-            $("#about").toggleClass("active");
-        }
-    </script>
 </head>
+    
 <body bgcolor="#D7CEC7">
-    <div class="header">
-        <div id="sel" class="option">
-            <p>關於我們
-                <img src="images/cog-512.png" width="20px" align="right" /></p>
-            <ul id="about" class="option-cont active">
-                <li>音量調整</li>
-                <li>關於我們</li>
-            </ul>
-        </div>
-    </div>
     <a href="index.html" target="_top"><img src="images/2916773-200.png" align="left" width="20px" alt="返回" /></a>
 </body>
 
