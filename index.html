@@ -6,51 +6,131 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡單測驗</title>
-    <style>
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    .option-cont {
-        list-style-type: none;
-        border: 1 solid black;
-        padding: 0;
-        display: none;
-    }
-        .option-cont li {
-            width: 30%;
-            height: 50px;
-            background-color: #DSD5D5;
-            color: #9099A2
-            border: 1px solid #9099A2;
-            padding: 10px;
-            text-align: center;
+   <style type="text/css">
+        nav {
+            margin:100px auto;
+            text-align:center;
         }
-    .active {
-        display: block;
-    }
-    </style>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script>
-        // 網頁載入完成時執行
-        $(document).ready(function () {
-            //將#set元素綁定mouseenter和mouseleave事件
-            //mouseenter和mouseleave事件被觸發時會執行fnToggleClass函式
-            //滑鼠碰到#set顯示#list選單
-            //滑鼠離開#set隱藏#list選單
-            $("#set").on({
-                "mouseenter": fnToggleClass,
-                "mouseleave": fnToggleClass
-            });
-        });
+        nav ul {
+            border-radius:10px;
+            background:linear-gradient(to bottom,#efefef,#bbbbbb);
+            padding:0 20px;
+            display:inline-table;
+            position:relative;
+            box-shadow:1px 1px 3px #666;
+            list-style:none;
 
-        function fnToggleClass() {
-            //切換顯示#list，即選單
-            $("#list").toggleClass("active");
         }
-    </script>
+        nav ul ul {
+            display:none;
+            list-style:none;
+        }
+        nav ul li {
+            float:left;
+            list-style:none;
+        }
+        nav ul::after {
+            content:"";
+            display:block;
+            clear:both;
+            list-style:none;
+        }
+        nav ul li a {
+            display:block;
+            padding:25px 40px;
+            color:#000;
+            text-decoration:none;
+            font-family:"微軟雅黑";
+
+        }
+        nav ul li:hover > ul {
+            display:block;
+            list-style:none;
+        }
+        nav ul li:hover {
+            background:linear-gradient(to bottom,#4f5964,#5f6975);
+            list-style:none;
+        }
+        nav ul li:hover a {
+            color:#FFF;
+        }
+        nav ul ul {
+            background:#5f6975;
+            border-radius:0;
+            position:absolute;
+            top:100%;
+            padding:0;
+            list-style:none;
+        }
+        nav ul ul li {
+            float:none;
+            border-top:1px solid #6b727c;
+            border-bottom:1px solid #575f6a;
+            list-style:none;
+        }
+        nav ul ul li a {
+            color:#FFF;
+        }
+        nav ul ul li a:hover {
+            background:#4b545f;
+        }
+        nav ul ul ul {
+            width:100%;
+            position:absolute;
+            left:100%;
+            top:50%;
+            list-style:none;
+        }
+
+    </style>
+
+
 </head>
+
+
 <body bgcolor="#D7CEC7">
+<nav>
+    <ul>
+        <li><a href="#">導航一</a>
+            <ul>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+            </ul>
+        </li>
+        <li><a href="#">導航二</a></li>
+        <li><a href="#">導航三</a>
+            <ul>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a>
+                    <ul>
+                        <li><a href="#">三級導航</a></li>
+                        <li><a href="#">三級導航</a></li>
+                        <li><a href="#">三級導航</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">二級導航</a></li>
+            </ul>
+        </li>
+        <li><a href="#">導航四</a>
+            <ul>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+            </ul>
+        </li>
+        <li><a href="#">導航五</a>
+            <ul>
+                <li><a href="#">二級導航</a></li>
+                <li><a href="#">二級導航</a></li>
+            </ul>
+        </li>
+        <li><a href="#">導航六</a></li>
+    </ul>
+</nav>
+
     <div id="set" class="option-cont">
         <img src="images/cog-512.png" width="20px" align="right" />
         <ul id="list" class="option-cont active">
