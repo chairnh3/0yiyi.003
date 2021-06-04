@@ -7,17 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>牌中靈語</title>
     <style>
-      body {
-        margin: 0px;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,body{
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
       }
       iframe {
-        height: 640px;
+        height: 100%;
         width: 100%;
       }
     </style>
 </head>
 <body bgcolor="#D7CEC7">
-    <iframe name="imain" src="main.html" frameborder="0"></iframe>
-    <audio src="others/bgmusic.mp3" autoplay loop hidden></audio>
+    <div class="container">
+      <iframe name="imain" src="main.html" frameborder="0"></iframe>
+      <audio src="others/bgmusic.mp3" autoplay loop hidden></audio>
+    </div>
 </body>
 </html>
