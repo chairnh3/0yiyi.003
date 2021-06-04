@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>牌中靈語-起始畫面</title>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牌中靈語-起始畫面</title>
+    <style>
+body {
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4A4A ;
+  text-align: center;
+}
+
+.cover {
+  position: relative;
+  width: 300px;
+  height: 310px;
+  margin: 20px auto;
+  background-color: #eee;
+  z-index: 1;
+  padding: 10px;
+  
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  -mox-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.left_gate {
+  position: absolute;
+  background: #DBDCDE;
+  bottom: 0; right: 50%; left: 0; top: 0;
+  border:1px solid #F0F0F0;
+    
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+    
+    
+  
+}
+.cover:hover .left_gate {
+  right: 100%; left: -50%;
+}
+
+.right_gate {
+  position: absolute;
+  background: #DBDCDE;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 0;
+  border:1px solid #F0F0F0;
+  
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.cover:hover .right_gate {
+  left: 100%; right: -50%;
+}
+
+.slide_in {
+  overflow: hidden;
+}
+.slide_in .left_gate {
+  background: #DBDCDE;
+  border:1px solid #F0F0F0;
+}
+.slide_in .right_gate {
+  background: #DBDCDE;
+  border:1px solid #F0F0F0;
+}
+
+.cover img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+p{ 
+    margin-top: 15px;
+    text-align: justify;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+a{
+    text-decoration: none;
+    color: #4A4A4A !important;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #6B6B6B !important ;
+}
+    </style>
   </head>
-<body bgcolor="#8BC79C">
-</body>
+  <body bgcolor="#8BC79C">
+<div class="cover">
+  <div class="left_gate"></div>
+  <div class="right_gate"></div>
+
+  <h1>Sample Box</h1>   
+       <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus. Nullam justo ipsum, hendrerit ut commodo nec, pellentesque nec erat. Pellentesque pharetra.
+       </p> 
+       <br />
+       <a href="http://www.designshock.com/"> DesignShock.com </a>
+    
+</div>
+
+<div class="cover slide_in">
+  <div class="left_gate"></div>
+  <div class="right_gate"></div>
+
+  <h1>Sample Box</h1>   
+       <img src="http://www.wpthemegenerator.com/wp-content/uploads/2012/06/Image.jpg">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus consectetur dolor a porttitor. Curabitur id sem sed ante fringilla pulvinar et id lectus. Nullam justo ipsum, hendrerit ut commodo nec, pellentesque nec erat. Pellentesque pharetra.
+       </p> 
+       <br />
+       <a href="http://www.designshock.com/"> DesignShock.com </a>
+    
+</div>
+  </body>
 </html>
