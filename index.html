@@ -6,6 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>牌中靈語-起始畫面</title>
+    <script type="text/javascript">
+     function delayURL(url,time){
+     setTimeout("top.location.href = '"   url   "'",time);
+     }
+    </script>
     <style>
       * {
         margin: 0;
@@ -96,7 +101,8 @@
       </a>
 
       <a href="border.html">test</a>
-    
+      <a href="#" onClick="delayURL('http://www.baidu.com/',3000)">點選到百度</a>
+
     </div>
   </body>
 </html>
