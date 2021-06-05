@@ -11,88 +11,90 @@
         margin: 0;
         padding: 0;
       }
-html,body {
-  font-size: 11px;
-  font-family: 'Open Sans', sans-serif;
-  color: #4A4A4A ;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.cover {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: #eee;
-  z-index: 1;
-  padding: 0;
-}
+      html,body {
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+        color: #4A4A4A ;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-.left_gate {
-  position: absolute;
-  background: #8BC79C;
-  bottom: 0;
-  right: 50%;
-  left: 0;
-  top: 0;
-  border: 0;
-    
-  -webkit-transition: all 1.5s ease-out;
-  -moz-transition: all 1.5s ease-out;
-  -ms-transition: all 1.5s ease-out;
-  -o-transition:all 1.5s ease-out;
-  transition: all 1.5s ease-out;
-}
+      .cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #eee;
+        z-index: 1;
+        padding: 0;
+      }
 
-.cover:hover .left_gate {
-  right: 100%; left: -50%;
-}
+      .left_gate {
+        position: absolute;
+        background: #8BC79C;
+        bottom: 0;
+        right: 50%;
+        left: 0;
+        top: 0;
+        border: 0;
 
-.right_gate {
-  position: absolute;
-  background: #8BC79C;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  top: 0;
-  border: 0;
-  
-  -webkit-transition: all 1.5s ease-out;
-  -moz-transition: all 1.5s ease-out;
-  -ms-transition: all 1.5s ease-out;
-  -o-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
-}
-.cover:hover .right_gate {
-  left: 100%; right: -50%;
-}
+        -webkit-transition: all 1.5s ease-out;
+        -moz-transition: all 1.5s ease-out;
+        -ms-transition: all 1.5s ease-out;
+        -o-transition:all 1.5s ease-out;
+        transition: all 1.5s ease-out;
+      }
 
-.slide_in {
-  overflow: hidden;
-}
-.slide_in .left_gate {
-  background: #8BC79C;
-  border: 0;
-}
-.slide_in .right_gate {
-  background: #8BC79C;
-  border: 0;
-}
+      .cover:hover .left_gate {
+        right: 100%; left: -50%;
+      }
 
+      .right_gate {
+        position: absolute;
+        background: #8BC79C;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        top: 0;
+        border: 0;
+
+        -webkit-transition: all 1.5s ease-out;
+        -moz-transition: all 1.5s ease-out;
+        -ms-transition: all 1.5s ease-out;
+        -o-transition: all 1.5s ease-out;
+        transition: all 1.5s ease-out;
+      }
+
+      .cover:hover .right_gate {
+        left: 100%; right: -50%;
+      }
+
+      .slide_in {
+        overflow: hidden;
+      }
+      .slide_in .left_gate {
+        background: #8BC79C;
+        border: 0;
+      }
+
+      .slide_in .right_gate {
+        background: #8BC79C;
+        border: 0;
+      }
     </style>
   </head>
   <body>
 
-<div class="cover slide_in" width="100vh" height="100vh">
-  <div class="left_gate" width="100vh" height="100vh"></div>
-  <div class="right_gate" width="100vh" height="100vh"></div>
+    <div class="cover slide_in" width="100vh" height="100vh">
+      <div class="left_gate" width="100vh" height="100vh"></div>
+      <div class="right_gate" width="100vh" height="100vh"></div>
 
-       <a href="border.html">test</a>
+      <a href="border.html">test</a>
     
-</div>
+    </div>
   </body>
 </html>
